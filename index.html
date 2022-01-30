@@ -1,22 +1,44 @@
-<!-- <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><head>
-</body>
-  <div class="section"> 
- <h2>Public Video</h2> 
- <div style='text-align:center;'> 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/cN0C_OrPQuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
- </div> 
- </div> 
-  </body></html> -->
 <!DOCTYPE html>
 <html>
+<style>
+    #page{ margin:0 auto; width:80%}
+    hr
+    {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    }
+</style>
+<div id="page">
+<br>
+<center>
+<span style="font-size:36px; font-weight:bold;">
+One-shot Pose-free Head Synthesis with 3D Geometric Motion Instructions
+</span>
+<br />
+<br />
+<center>
+<span style="font-size:20px">
+This page provides some visible video results of paper #4134
+</span>
+</center>
+</center>
+<br>
+<hr>
+</div>
+<div id="page">
+<center>
+<h1>Visible Results</h1>
+</center>
+<h2>Reenactment<font color="red"> (15 samples / 170s)</font></h2>
 <video
     id="my-player"
     class="video-js"
     controls
     preload="auto"
-    data-setup='{}'>
-  <source src="videos/test.mp4" type="video/mp4"></source>
+    data-setup='{}'
+    width="100%">
+  <source src="videos/reenactment.mp4" type="video/mp4"></source>
   <p class="vjs-no-js">
     To view this video please enable JavaScript, and consider upgrading to a
     web browser that
@@ -25,4 +47,65 @@
     </a>
   </p>
 </video>
+<br />
+<br />
+<h2>Reconstruction<font color="red"> (15 samples / 116s)</font></h2>
+<video
+    id="my-player"
+    class="video-js"
+    controls
+    preload="auto"
+    data-setup='{}'
+    width="100%">
+  <source src="videos/reconstruction.mp4" type="video/mp4"></source>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
+</video>
+<br />
+<br />
+<h2>Frontalization<font color="red"> (10 samples / 94s)</font></h2>
+<video
+    id="my-player"
+    class="video-js"
+    controls
+    preload="auto"
+    data-setup='{}'
+    width="58%">
+  <source src="videos/frontalization.mp4" type="video/mp4"></source>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
+</video>
+<br />
+<br />
+<h2>The ablation study of depth estimation<font color="red"> (7 samples / 64s)</font></h2>
+<video
+    id="my-player"
+    class="video-js"
+    controls
+    preload="auto"
+    data-setup='{}'
+    width="58%">
+  <source src="videos/depth.mp4" type="video/mp4"></source>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
+</video>
+<br />
+<br />
+</div>
+
 </html>
